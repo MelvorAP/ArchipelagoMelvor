@@ -3,8 +3,39 @@ from dataclasses import dataclass
 from enum import Enum, IntEnum
 from typing import Type, List
 
-from Options import (Choice, DeathLink, PerGameCommonOptions, StartInventoryPool, Toggle, Range, OptionSet, TextChoice,
-                     DefaultOnToggle)
+from Options import (DeathLink, PerGameCommonOptions, StartInventoryPool, Toggle, Range)
+
+
+class IsPermaDeath(Toggle):
+    """
+    Set if the game has permadeath.
+    """
+    display_name = "Is Permadeath"
+    default = 0
+
+
+class ItemDoubling(Toggle):
+    """
+    Set if items can be doubles when crafting.
+    """
+    display_name = "Item Doubling"
+    default = 1
+
+
+class Preservation(Toggle):
+    """
+    Set if ingredients can be preserved in crafting.
+    """
+    display_name = "Ingredient Doubling"
+    default = 1
+
+
+class HasRegen(Toggle):
+    """
+    Set if not being in combat automatically heals the player.
+    """
+    display_name = "Has Regen"
+    default = 1
 
 
 class ExpGain(Range):
@@ -29,7 +60,7 @@ class MasteryGain(Range):
 
 class CurrencyGain(Range):
     """
-    Set how much mastery experience you get in the game. This value is additive.
+    Set how much currency you get in the game. This value is additive.
     """
     display_name = "Mastery Gain Percentage"
     range_start = -90
@@ -39,7 +70,7 @@ class CurrencyGain(Range):
 
 class SlayerCoinGain(Range):
     """
-    Set how much mastery experience you get in the game. This value is additive.
+    Set how much slayer coins you get in the game. This value is in percentage and is additive.
     """
     display_name = "Mastery Gain Percentage"
     range_start = -90
@@ -53,7 +84,7 @@ class MaxMasteryPoolCap(Range):
     """
     display_name = "Increase Mastery Pool Cap"
     range_start = 0
-    range_end = 900
+    range_end = 500
     default = 0
 
 
@@ -69,11 +100,18 @@ class BankSpaceIncrease(Range):
 
 @dataclass
 class MelvorGameOptions(PerGameCommonOptions):
+    is_permaDeath: IsPermaDeath
+    item_doubling: ItemDoubling
+    preservation: Preservation
+    has_regen: HasRegen
+
     exp_gain: ExpGain
     mastery_gain: MasteryGain
     currency_gain: CurrencyGain
     slayer_gain: SlayerCoinGain
     max_mastery_pool_cap: MaxMasteryPoolCap
     bank_space_increase: BankSpaceIncrease
+
     start_inventory_from_pool: StartInventoryPool
+
     death_link: DeathLink

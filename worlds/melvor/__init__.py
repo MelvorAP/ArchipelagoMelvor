@@ -49,12 +49,18 @@ class MelvorWorld(World):
 
     def fill_slot_data(self):
         return {
+            "is_permaDeath": bool(self.options.is_permaDeath),
+            "item_doubling": bool(self.options.item_doubling),
+            "preservation": bool(self.options.preservation),
+            "has_regen": bool(self.options.has_regen),
+
             "exp_gain": int(self.options.exp_gain),
             "mastery_gain": int(self.options.mastery_gain),
             "currency_gain": int(self.options.currency_gain),
             "slayer_gain": int(self.options.slayer_gain),
             "max_mastery_pool_cap": int(self.options.max_mastery_pool_cap),
             "bank_space_increase": int(self.options.bank_space_increase),
+
             "death_link": bool(self.options.death_link.value)
         }
 
