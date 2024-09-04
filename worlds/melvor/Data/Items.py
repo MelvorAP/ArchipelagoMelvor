@@ -26,70 +26,134 @@ base_skill_unlocks = [
 ]
 
 base_pets = [
+    # Woodcutting
     "Beavis",
-    "PuddingDuckie",
+    # Fishing
+    "Pudding Duckie",
+    # Firemaking
     "Pyro",
+    # Cooking
     "Cris",
+    # Mining
     "CoolRock",
-    "Puff,theBabyDragon",
-    "Larry,theLonelyLizard",
+    # Smithing
+    "Puff, the Baby Dragon",
+    # Farming
+    "Larry,the Lonely Lizard",
+    # Attack
     "Bruce",
-    "LilRon",
+    # Strength
+    "Lil Ron",
+    # Defence
     "Leonardo",
-    "Finn,theCat",
-    "GoldenGolbin",
+    # Hitpoints
+    "Finn, the Cat",
+    # Kill 42,069 goblins
+    "Golden Golbin",
+    # Mastery
     "Ty",
-    "RippertheReindeer",
+    # Chicken Coop
     "Chick",
+    # Undead Graveyard
     "Zarrah",
+    # Bandit Base
     "Chio",
-    "BouncingBob",
+    # Hall of Wizards
+    "Bouncing Bob",
+    # Spider Forest
     "Rosey",
+    # Deep Sea Ship
     "Ayyden",
-    "ArcticYeti",
+    # Frozen Cove
+    "Arctic Yeti",
+    # Volcanic Cave
     "Mac",
-    "JerrytheGiraffe",
-    "PrestonthePlatypus",
-    "FestiveCoolRock",
-    "FestiveChio",
+    # Golbin Raid Shop
+    "Jerry the Giraffe",
+    # Golbin Raid Shop
+    "Preston the Platypus",
+    # Thieving
     "Snek",
+    # Fletching
     "Quill",
+    # Crafting
     "Caaarrrlll",
+    # Runecrafting
     "Gunter",
+    # Herblore
     "Gronk",
+    # Ranged
     "Marahute",
+    # Magic
     "Salem",
+    # Prayer
     "Monk-ey",
+    # Slayer
     "Asura",
+    # Perilous Peaks
     "Peri",
+    # Dark Waters
     "Otto",
-    "JellyJim",
+    # Miolite Caves
+    "Jelly Jim",
+    # Dragons Den
     "Harley",
+    # Infernal Stronghold
     "Singe",
+    # Air God Dungeon
     "Aquarias",
+    # Water God Dungeon
     "Norman",
+    # Earth God Dungeon
     "Erran",
+    # Fire God Dungeon
+    "Ren"
+    # Into the Mist
     "Pablo",
-    "TimtheWolf",
+    # Summoning
+    "Tim the Wolf",
+    # Summoning
     "Mark",
+    # Impending Darkness Event
     "Bone",
+    # Astrology
     "Astro",
+    # Township, Malcs Cats
     "Marcy",
+    # Township, Malcs Cats
     "Roger",
+    # Township, Malcs Cats
     "Layla",
-    "MisterFuzzbutt",
-    "OctaviusLepidusVIII",
+    # Township, Malcs Cats
+    "Mister Fuzzbutt",
+    # Township, Malcs Cats
+    "Octavius Lepidus VIII",
+    # Mastery level 120
     "Saki",
+    # Stronghold of the Undead
     "Hades",
+    # Stronghold of Magic
     "Caleb",
+    # Stronghold of Dragons
     "Cindar",
+    # Stronghold of the Gods
     "Maxwell"
+]
+
+base_event_pets = [
+    # Event only, just cosmetic
+    "Ripper the Reindeer",
+    # Event only, just cosmetic
+    "Festive Cool Rock",
+    # Event only, just cosmetic
+    "Festive Chio",
 ]
 
 # This array must maintain a consistent order because the IDs are generated from it.
 all_items = [
     *base_skill_unlocks,
-    *base_pets
+    *base_pets,
+    *base_event_pets
 ]
 
 progression_items = [
@@ -101,5 +165,5 @@ useful_items = [
 ]
 
 filler_items = [
-
+    *base_event_pets
 ]
