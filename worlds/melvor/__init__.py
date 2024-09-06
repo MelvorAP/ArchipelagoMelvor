@@ -49,6 +49,10 @@ class MelvorWorld(World):
 
     def fill_slot_data(self):
         return {
+            "victory_condition": int(self.options.victory_condition),
+
+            "useful_pet_locations": bool(self.options.useful_pet_locations),
+
             "is_permaDeath": bool(self.options.is_permaDeath),
             "item_doubling": bool(self.options.item_doubling),
             "preservation": bool(self.options.preservation),

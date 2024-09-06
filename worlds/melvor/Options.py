@@ -6,6 +6,30 @@ from typing import Type, List
 from Options import (DeathLink, PerGameCommonOptions, StartInventoryPool, Toggle, Range)
 
 
+class VictoryCondition(Toggle):
+    """
+    Select the end goal of your game.
+    [Max Level] Reach the maximum level in every skill.
+    [Max Level and Mastery] Reach the maximum level and mastery in every skill.
+    [All Kills] Kill every enemy in the game at least once.
+    [Completion] Get 100% completion in the Completion Log.
+    """
+    display_name = "Victory Condition"
+    option_max_level = 0
+    # option_max_level_and_mastery = 1
+    # option_max_all_kills = 2
+    # option_max_completion = 3
+    default = 0
+
+
+class UsefulPetLocations(Toggle):
+    """
+    Pet locations can have progression items or useful items. Pets usually take a while to unlock.
+    """
+    display_name = "Pet Location Items"
+    default = 0
+
+
 class IsPermaDeath(Toggle):
     """
     Set if the game has permadeath.
@@ -100,6 +124,10 @@ class BankSpaceIncrease(Range):
 
 @dataclass
 class MelvorGameOptions(PerGameCommonOptions):
+    victory_condition: VictoryCondition
+
+    useful_pet_locations: UsefulPetLocations
+
     is_permaDeath: IsPermaDeath
     item_doubling: ItemDoubling
     preservation: Preservation

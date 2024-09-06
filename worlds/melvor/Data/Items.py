@@ -68,10 +68,6 @@ base_pets = [
     "Arctic Yeti",
     # Volcanic Cave
     "Mac",
-    # Golbin Raid Shop
-    "Jerry the Giraffe",
-    # Golbin Raid Shop
-    "Preston the Platypus",
     # Thieving
     "Snek",
     # Fletching
@@ -149,11 +145,19 @@ base_event_pets = [
     "Festive Chio",
 ]
 
+base_goblin_raid_pets = [
+    # Golbin Raid Shop
+    "Jerry the Giraffe",
+    # Golbin Raid Shop
+    "Preston the Platypus",
+]
+
 # This array must maintain a consistent order because the IDs are generated from it.
 all_items = [
     *base_skill_unlocks,
     *base_pets,
-    *base_event_pets
+    *base_event_pets,
+    *base_goblin_raid_pets
 ]
 
 progression_items = [
@@ -165,5 +169,6 @@ useful_items = [
 ]
 
 filler_items = [
-    *base_event_pets
+    *base_event_pets,
+    *base_goblin_raid_pets
 ]
