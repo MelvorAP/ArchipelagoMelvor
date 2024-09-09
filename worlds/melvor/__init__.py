@@ -49,6 +49,9 @@ class MelvorWorld(World):
 
     def fill_slot_data(self):
         return {
+            "progressive_skills": bool(self.options.progressive_skills),
+            "remove_skill_action_levels": bool(self.options.progressive_skills),
+
             "victory_condition": int(self.options.victory_condition),
 
             "useful_pet_locations": bool(self.options.useful_pet_locations),

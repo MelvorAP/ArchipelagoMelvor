@@ -25,6 +25,24 @@ base_skill_unlocks = [
     "Township"
 ]
 
+base_progressive_skills_unlocks = [
+    "Progressive Woodcutting",
+    "Progressive Fishing",
+    "Progressive Firemaking",
+    "Progressive Cooking",
+    "Progressive Mining",
+    "Progressive Smithing",
+    "Progressive Thieving",
+    "Progressive Farming",
+    "Progressive Fletching",
+    "Progressive Crafting",
+    "Progressive Runecrafting",
+    "Progressive Herblore",
+    "Progressive Agility",
+    "Progressive Summoning",
+    "Progressive Astrology"
+]
+
 base_pets = [
     # Woodcutting
     "Beavis",
@@ -155,6 +173,7 @@ base_goblin_raid_pets = [
 # This array must maintain a consistent order because the IDs are generated from it.
 all_items = [
     *base_skill_unlocks,
+    *base_progressive_skills_unlocks,
     *base_pets,
     *base_event_pets,
     *base_goblin_raid_pets

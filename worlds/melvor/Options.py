@@ -3,10 +3,29 @@ from dataclasses import dataclass
 from enum import Enum, IntEnum
 from typing import Type, List
 
-from Options import (DeathLink, PerGameCommonOptions, StartInventoryPool, Toggle, Range)
+from Options import (DeathLink, PerGameCommonOptions, StartInventoryPool, Toggle, Range, Choice)
 
 
-class VictoryCondition(Toggle):
+class ProgressiveSkills(Toggle):
+    """
+    Select whether the skill action unlocks are progressive or not. If turned on, you will unlock all skill actions
+    in order. If turned off, you will unlock all skill actions in a random order. Do note that unlock requirements still
+    apply.
+    """
+    display_name = "Pet Location Items"
+    default = 1
+
+
+class RemoveSkillActionLevels(Toggle):
+    """
+    Select whether skill actions allow to be done on level 1. This way you don't need to grind to use unlocked
+    skill actions.
+    """
+    display_name = "Remove Skill Action Level Requirements"
+    default = 1
+
+
+class VictoryCondition(Choice):
     """
     Select the end goal of your game.
     [Max Level] Reach the maximum level in every skill.
@@ -124,6 +143,9 @@ class BankSpaceIncrease(Range):
 
 @dataclass
 class MelvorGameOptions(PerGameCommonOptions):
+    progressive_skills: ProgressiveSkills
+    remove_skill_action_levels: RemoveSkillActionLevels
+
     victory_condition: VictoryCondition
 
     useful_pet_locations: UsefulPetLocations
