@@ -1,160 +1,57 @@
-base_skill_unlocks = [
+demo_skill_unlocks = [
     "Attack",
     "Strength",
     "Defence",
     "Hitpoints",
-    "Ranged",
-    "Magic",
-    "Prayer",
-    "Slayer",
     "Woodcutting",
     "Fishing",
     "Firemaking",
     "Cooking",
     "Mining",
     "Smithing",
-    "Thieving",
-    "Farming",
-    "Fletching",
-    "Crafting",
-    "Runecrafting",
-    "Herblore",
-    "Agility",
-    "Summoning",
-    "Astrology",
-    "Township"
+    "Farming"
 ]
 
-base_progressive_skills_unlocks = [
+demo_progressive_skills_unlocks = [
     "Progressive Woodcutting",
     "Progressive Fishing",
     "Progressive Firemaking",
     "Progressive Cooking",
     "Progressive Mining",
     "Progressive Smithing",
-    "Progressive Thieving",
-    "Progressive Farming",
-    "Progressive Fletching",
-    "Progressive Crafting",
-    "Progressive Runecrafting",
-    "Progressive Herblore",
-    "Progressive Agility",
-    "Progressive Summoning",
-    "Progressive Astrology"
+    "Progressive Farming"
 ]
 
-base_pets = [
-    # Woodcutting
+demo_pets = [
     "Beavis",
-    # Fishing
     "Pudding Duckie",
-    # Firemaking
     "Pyro",
-    # Cooking
     "Cris",
-    # Mining
-    "CoolRock",
-    # Smithing
+    "Cool Rock",
     "Puff, the Baby Dragon",
-    # Farming
-    "Larry,the Lonely Lizard",
-    # Attack
+    "Larry, the Lonely Lizard",
     "Bruce",
-    # Strength
     "Lil Ron",
-    # Defence
     "Leonardo",
-    # Hitpoints
     "Finn, the Cat",
-    # Kill 42,069 goblins
     "Golden Golbin",
-    # Mastery
     "Ty",
-    # Chicken Coop
+    "Ripper the Reindeer",
     "Chick",
-    # Undead Graveyard
     "Zarrah",
-    # Bandit Base
     "Chio",
-    # Hall of Wizards
     "Bouncing Bob",
-    # Spider Forest
     "Rosey",
-    # Deep Sea Ship
     "Ayyden",
-    # Frozen Cove
     "Arctic Yeti",
-    # Volcanic Cave
     "Mac",
-    # Thieving
-    "Snek",
-    # Fletching
-    "Quill",
-    # Crafting
-    "Caaarrrlll",
-    # Runecrafting
-    "Gunter",
-    # Herblore
-    "Gronk",
-    # Ranged
-    "Marahute",
-    # Magic
-    "Salem",
-    # Prayer
-    "Monk-ey",
-    # Slayer
-    "Asura",
-    # Perilous Peaks
-    "Peri",
-    # Dark Waters
-    "Otto",
-    # Miolite Caves
-    "Jelly Jim",
-    # Dragons Den
-    "Harley",
-    # Infernal Stronghold
-    "Singe",
-    # Air God Dungeon
-    "Aquarias",
-    # Water God Dungeon
-    "Norman",
-    # Earth God Dungeon
-    "Erran",
-    # Fire God Dungeon
-    "Ren"
-    # Into the Mist
-    "Pablo",
-    # Summoning
-    "Tim the Wolf",
-    # Summoning
-    "Mark",
-    # Impending Darkness Event
-    "Bone",
-    # Astrology
-    "Astro",
-    # Township, Malcs Cats
-    "Marcy",
-    # Township, Malcs Cats
-    "Roger",
-    # Township, Malcs Cats
-    "Layla",
-    # Township, Malcs Cats
-    "Mister Fuzzbutt",
-    # Township, Malcs Cats
-    "Octavius Lepidus VIII",
-    # Mastery level 120
-    "Saki",
-    # Stronghold of the Undead
-    "Hades",
-    # Stronghold of Magic
-    "Caleb",
-    # Stronghold of Dragons
-    "Cindar",
-    # Stronghold of the Gods
-    "Maxwell"
+    "Jerry the Giraffe",
+    "Preston the Platypus",
+    "Festive Cool Rock",
+    "Festive Chio",
 ]
 
-base_event_pets = [
+demo_event_pets = [
     # Event only, just cosmetic
     "Ripper the Reindeer",
     # Event only, just cosmetic
@@ -163,31 +60,41 @@ base_event_pets = [
     "Festive Chio",
 ]
 
-base_goblin_raid_pets = [
+demo_goblin_raid_pets = [
     # Golbin Raid Shop
     "Jerry the Giraffe",
     # Golbin Raid Shop
     "Preston the Platypus",
 ]
 
+demo_progressive_skill_count = [
+    ["Progressive Woodcutting", 9],
+    ["Progressive Fishing", 17],
+    ["Progressive Firemaking", 9],
+    ["Progressive Cooking", 31],
+    ["Progressive Mining", 11],
+    ["Progressive Smithing", 16],
+    ["Progressive Farming", 24]
+]
+
 # This array must maintain a consistent order because the IDs are generated from it.
 all_items = [
-    *base_skill_unlocks,
-    *base_progressive_skills_unlocks,
-    *base_pets,
-    *base_event_pets,
-    *base_goblin_raid_pets
+    *demo_skill_unlocks,
+    *demo_progressive_skills_unlocks,
+    *demo_pets,
+    *demo_event_pets,
+    *demo_goblin_raid_pets
 ]
 
 progression_items = [
-    *base_skill_unlocks
+    *demo_skill_unlocks
 ]
 
 useful_items = [
-    *base_pets
+    *demo_pets
 ]
 
 filler_items = [
-    *base_event_pets,
-    *base_goblin_raid_pets
+    *demo_event_pets,
+    *demo_goblin_raid_pets
 ]

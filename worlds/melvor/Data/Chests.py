@@ -11,7 +11,7 @@ chests: List[ChestData] = [
               [
                   "Old Boot",
                   "Shell",
-                  "Rope ",
+                  "Rope",
                   "Glass Bottle",
                   "Rusty Key",
                   "Old Hat",
