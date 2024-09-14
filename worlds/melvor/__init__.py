@@ -56,7 +56,7 @@ class MelvorWorld(World):
 
             "useful_pet_locations": bool(self.options.useful_pet_locations),
 
-            "is_permaDeath": bool(self.options.is_permaDeath),
+            "difficulty": int(self.options.difficulty),
             "item_doubling": bool(self.options.item_doubling),
             "preservation": bool(self.options.preservation),
             "has_regen": bool(self.options.has_regen),

@@ -81,7 +81,7 @@ demo_progressive_skill_count = [
     ["Progressive Firemaking", 9],
     ["Progressive Cooking", 31],
     ["Progressive Mining", 11],
-    ["Progressive Smithing", 16],
+    ["Progressive Smithing", 7],
     ["Progressive Farming", 24]
 ]
 
@@ -107,7 +107,8 @@ all_items = [
 ]
 
 progression_items = [
-    *demo_skill_unlocks
+    *demo_skill_unlocks,
+    *demo_progressive_skills_unlocks,
 ]
 
 useful_items = [

@@ -49,12 +49,18 @@ class UsefulPetLocations(Toggle):
     default = 0
 
 
-class IsPermaDeath(Toggle):
+class Difficulty(Choice):
     """
-    Set if the game has permadeath.
+    Set how difficult the game is.
+    [Easy] No permadeath and no items lost on death.
+    [Normal] No permadeath, but a random item is lost on death.
+    [Hard] When you die, you lose your save. Be aware of death link.
     """
-    display_name = "Is Permadeath"
-    default = 0
+    display_name = "Difficulty"
+    option_easy = 0
+    option_normal = 1
+    option_hard = 2
+    default = 1
 
 
 class ItemDoubling(Toggle):
@@ -150,7 +156,7 @@ class MelvorGameOptions(PerGameCommonOptions):
 
     useful_pet_locations: UsefulPetLocations
 
-    is_permaDeath: IsPermaDeath
+    difficulty: Difficulty
     item_doubling: ItemDoubling
     preservation: Preservation
     has_regen: HasRegen
