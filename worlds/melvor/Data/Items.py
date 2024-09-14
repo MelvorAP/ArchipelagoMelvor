@@ -1,3 +1,11 @@
+from typing import NamedTuple
+
+
+class ProgressiveSkillData(NamedTuple):
+    name: str
+    progression_count: int
+    max_level: int
+
 demo_skill_unlocks = [
     "Attack",
     "Strength",
@@ -75,6 +83,18 @@ demo_progressive_skill_count = [
     ["Progressive Mining", 11],
     ["Progressive Smithing", 16],
     ["Progressive Farming", 24]
+]
+
+demo_progressive_woodcutting = [
+    ProgressiveSkillData("Normal Tree", 1, 10),
+    ProgressiveSkillData("Oak Tree", 2, 25),
+    ProgressiveSkillData("Willow Tree", 3, 35),
+    ProgressiveSkillData("Teak Tree", 4, 45),
+    ProgressiveSkillData("Maple Tree", 5, 55),
+    ProgressiveSkillData("Mahogany Tree", 6, 60),
+    ProgressiveSkillData("Yew Tree", 7, 75),
+    ProgressiveSkillData("Magic Tree", 8, 90),
+    ProgressiveSkillData("Redwood Tree", 9, 99)
 ]
 
 # This array must maintain a consistent order because the IDs are generated from it.

@@ -13,11 +13,11 @@ all_exits = [
     ["Combat", "Combat Area - Wizard Tower", ["Wizard Tower"]],
     ["Combat", "Combat Area - Dragon Valley", ["Dragon Valley"]],
     ["Combat", "Combat Area - Elerine Battlegrounds", ["Elerine Battlegrounds"]],
-    ["Menu", "Woodcutting", ["Any Woodcutting"]],
-    ["Menu", "Fishing", ["Any Fishing"]],
-    ["Menu", "Firemaking", ["Any Firemaking"]],
-    ["Menu", "Cooking", ["Any Cooking"]],
-    ["Menu", "Mining", ["Any Mining"]],
-    ["Menu", "Smithing", ["Any Smithing"]],
-    ["Menu", "Farming", ["Any Farming"]]
+    ["Menu", "Woodcutting", ["Woodcutting"]],
+    ["Menu", "Fishing", ["Fishing"]],
+    ["Menu", "Firemaking", ["Firemaking"]],
+    ["Menu", "Cooking", ["Cooking"]],
+    ["Menu", "Mining", ["Mining"]],
+    ["Menu", "Smithing", ["Smithing"]],
+    ["Menu", "Farming", ["Farming"]]
 ]
