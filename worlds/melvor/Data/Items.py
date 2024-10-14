@@ -44,7 +44,6 @@ demo_pets = [
     "Finn, the Cat",
     "Golden Golbin",
     "Ty",
-    "Ripper the Reindeer",
     "Chick",
     "Zarrah",
     "Chio",
@@ -53,10 +52,6 @@ demo_pets = [
     "Ayyden",
     "Arctic Yeti",
     "Mac",
-    "Jerry the Giraffe",
-    "Preston the Platypus",
-    "Festive Cool Rock",
-    "Festive Chio",
 ]
 
 demo_event_pets = [
