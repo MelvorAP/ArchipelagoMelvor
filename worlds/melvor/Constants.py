@@ -8,7 +8,7 @@ from .Data import Items, Locations
 if TYPE_CHECKING:
     from . import MelvorWorld
 
-id_offset: int = 20201120
+id_offset: int = 1
 
 debug_mode: bool = False
 
